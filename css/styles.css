@@ -1,0 +1,101 @@
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Cormorant+Garamond:400i');
+
+/* global */
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+p {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 24px;
+}
+
+/* landing */
+
+.img-wrapper {
+  height: 80vh;
+  width: 80vh;
+  background-color: #B8F0FF;
+  border-radius: 50%;
+  position: absolute;
+  left: -80vh;
+  top: 50%;
+  animation: fromLeft 1s ease-in-out;
+  animation-fill-mode:forwards, none;
+  transform: translateY(-40vh);
+}
+
+@keyframes fromLeft {
+  from {
+    transform: translate(0vh, -40vh);
+  }
+  to {
+    transform: translate(45vh, -40vh);
+  }
+}
+
+.img-wrapper img {
+  max-height: 95%;
+  max-width: 95%;
+  margin: 2% 27% 3% auto;
+}
+
+.quote-wrapper {
+  width: 60%;
+  float:right;
+  position: absolute;
+  left: 30%;
+  top: 60%;
+  animation: fromBelow .75s ease-in-out;
+  animation-fill-mode:forwards, none;
+  animation-delay: .5s;
+  transform: translateY(-69px);
+  opacity: 0;
+}
+
+@keyframes fromBelow {
+  from {
+    top: 60%;
+    opacity: 0;
+  }
+  to {
+    top: 48%;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
